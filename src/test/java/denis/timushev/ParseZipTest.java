@@ -39,6 +39,7 @@ public class ParseZipTest {
         InputStream inputStream = zipFile.getInputStream(zipEntry);
         PDF pdf = new PDF(inputStream);
         assertThat(pdf.title).isEqualTo("Краткое справочное руководство");
+        assertThat(pdf.numberOfPages).isEqualTo(59);
     }
 
     @Test
