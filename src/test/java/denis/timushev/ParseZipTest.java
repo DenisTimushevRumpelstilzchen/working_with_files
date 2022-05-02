@@ -27,9 +27,9 @@ public class ParseZipTest {
         XLS xls = new XLS(inputStream);
         assertThat(xls.excel
                 .getSheetAt(0)
-                .getRow(14)
+                .getRow(13)
                 .getCell(1)
-                .getStringCellValue()).contains("7604074992");
+                .getStringCellValue()).contains("ООО Золотое дно");
     }
 
     @Test
